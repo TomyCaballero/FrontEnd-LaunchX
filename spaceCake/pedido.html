@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Pedido</title>
+</head>
+<body>
+    <h1>Elige Tu Pastel Espacial</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">Escribe Tu Nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <br><br>
+        <label for="apellido">Escribe Tu Apellido</label><br>
+        <input type="text" id="apellido" name="apellido" form="form1">
+
+        <br><br>
+        
+        <label for="noPasteles">¿Cuantos Pasteles Quieres?</label><br>
+        <input type="number" id="noPasteles" name="noPasteles" placeholder="5">
+
+        <p>¿Llevas o recoger en SPACE-CAKE</p>
+        <input type="radio" id="SAPACE-CAKE" name="llevaroSPACE-CAKE" value="SAPACE-CAKE">
+        <label for="SAPACE-CAKE">Recoger en SPACE-CAKE</label><br>
+        <input type="radio" id="llevar" name="llevaroSPACE-CAKE" value="llevar">
+        <label for="llevar">Llevar a su Domicilio</label><br>
+
+        <p>Selecciona Tu PASTEL ESPACIAL</p>
+        <select name="pastel" id="pastel">
+            <option value="Mercuriano">Mercuriano</option>
+            <option value="deVenus">de Venus</option>
+            <option value="Terrano">Terrano</option>
+            <option value="Martiano">Martiano</option>
+            <option value="Jupiteriano">Jupiteriano</option>
+            <option value="Saturniano">Saturniano</option>
+            <option value="Urano">Urano</option>
+            <option value="Neptuniano">Neptuniano</option>
+            <option value="Plutoniano">Plutoniano</option>
+        </select>
+
+        <br>
+
+        <p>¿Tipo de pastel?</p>
+        <input type="radio" id="tresleches" name="nomalotresleches" value="tresleches">
+        <label for="tresleches">Hacer tu pastel de 3 leches</label><br>
+        <input type="radio" id="normal" name="nomalotresleches" value="normal">
+        <label for="normal">Dejar tu pastel normal</label><br>
+
+        <p>¿Algun complemento extra?</p>
+        <input type="checkbox" id="complemento1" name="complemento1" value="Extra Chocolate">
+        <label for="complemento1">Extra Chocolate</label><br>
+        <input type="checkbox" id="complemento2" name="complemento2" value="Nuez">
+        <label for="topping2">Extra Nuez</label><br>
+        <input type="checkbox" id="complemento3" name="complemento3" value="Fresas">
+        <label for="topping3">Fresas Extra</label><br>
+        <input type="checkbox" id="complemento4" name="complemento4" value="Frutas">
+        <label for="topping3">Frutas Variadas</label>
+
+
+        <h2>Datos Extra</h2>
+        <label for="correo1">Ingresa tu Correo</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+
+        <label for="tel1">Ingresa Tu Numero</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+</body>
+</html>
